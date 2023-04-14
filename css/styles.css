@@ -1,0 +1,237 @@
+* {
+  margin: 0; /* - Given - */
+  padding: 0; /* - Given - */
+}
+
+body {
+  /*background-color: #edefee;*/ /* - Given - */
+  background-color: #e3eee1; /* #daede9; #f0fff0; */
+  font-family: "Markazi Text", serif; /* - Given - */
+  margin: 3rem 5%; /* - Given - */
+}
+
+h1,
+h2 {
+  color: #26877f;
+}
+
+h1 {
+  font-size: 3rem; /* - Given - */
+  margin: 1rem 0;
+}
+
+h2 {
+  font-size: 2rem; /* - Given - */
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+header,
+section,
+footer {
+  margin: 2rem 0;
+}
+
+header > img {
+  display: block; /* - Given - */
+  max-width: 7rem;
+  margin-left: auto; /* - Given - */
+  margin-right: auto; /* - Given - */
+  /* box-shadow: 20px 20px 50px 10px pink inset; */
+}
+
+nav ul {
+  list-style: none; /* - Given - */
+  text-align: center; /* - Given - */
+
+  border-bottom: 4px solid #26877f;
+}
+
+/* -----!!!!!-----------*/
+
+nav ul li {
+  display: inline-block; /* - Given - */
+  margin: 1.2rem 1.2rem;
+  width: 150px;
+  border-left: 2px solid #26877f;
+  border-right: 2px solid #26877f;
+}
+
+nav ul li a {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(38, 135, 127);
+  text-transform: uppercase;
+  line-height: 1.2em;
+  text-decoration: none; /* - Given - */
+}
+
+main {
+  margin-top: 3rem;
+  padding: 1.5rem;
+}
+
+.section {
+  display: flex; /* - Given - */
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#welcome-head {
+  border-radius: 0.45rem;
+  border: 4px solid rgb(38, 135, 127);
+  /* background-color: #b9dabf; */
+  /* background-color: #c1e6c8; */
+  padding: 1.2rem;
+  color: white;
+}
+
+#welcome-head > article > p {
+  text-align: justify;
+}
+
+article {
+}
+
+.snapshot {
+  width: 284px;
+  padding: 10px 10px 20px 10px;
+  border: 1px solid #bfbfbf;
+  background-color: white;
+  box-shadow: 10px 10px 5px #aaaaaa;
+  margin: 1rem auto;
+  border-radius: 0.45rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  /* background-color: #c1e6c8; */
+}
+
+article img {
+  width: 284px;
+  height: 213px;
+  /* border: 4px solid rgb(38, 135, 127); */
+  /* border-radius: 50%; */
+  /* width: 100%; */
+
+  transition: 0.8s ease-in-out;
+}
+
+/* article img:hover {
+  border-radius: 50%;
+  transform: scale(1.5);
+  margin-bottom: 2rem;
+} */
+
+.snapshot p {
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.rotate_right {
+  float: left;
+  transform: rotate(8deg);
+}
+
+.rotate_left {
+  float: left;
+  transform: rotate(-8deg);
+  transition: transform 0.2s linear;
+}
+
+.rotate_right:hover,
+.rotate_left:hover {
+  transform: rotate(0deg);
+  transition: transform 0.2s linear;
+}
+
+footer {
+  display: flex; /* - Given - */
+  padding: 2rem 0; /* ------------- */
+  border-top: 4px solid #26877f;
+}
+
+footer div {
+  flex: 1; /* - Given - */
+}
+
+footer > div > img {
+  display: block;
+  max-width: 4rem;
+}
+
+#copyright p {
+  margin-top: 1rem;
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  color: rgb(126, 126, 126);
+  text-transform: uppercase;
+}
+
+#copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+#copyright ul {
+  max-width: 400px;
+}
+
+/*------------*/
+
+#footerNav ul {
+  list-style: none; /* - Given - */
+  text-align: center; /* - Given - */
+
+  border-bottom: 4px solid #26877f;
+}
+
+#footerNav ul li {
+  display: inline-block; /* - Given - */
+  margin: 1rem 1rem;
+  width: 120px;
+  border-left: 2px solid #26877f;
+  border-right: 2px solid #26877f;
+}
+
+#footerNav ul li a {
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(38, 135, 127);
+  text-transform: uppercase;
+  line-height: 1.2rem;
+  text-decoration: none; /* - Given - */
+}
+
+#footerNav ul li {
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 50%,
+    #cfcece 50%
+  );
+  background-position: -0% 0;
+  background-size: 200% auto;
+
+  transition: background-position 0.2s ease-out;
+}
+
+#footerNav ul li:hover {
+  background-position: -99.99% 0;
+}
+
+/*---------------------*/
+
+/* #copyright {
+  background-color: rgb(38, 135, 127);
+} */
+
+/*-----------------------*/
