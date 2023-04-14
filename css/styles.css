@@ -7,7 +7,7 @@
 /*--- Global styles ---*/
 
 body {
-  background-color: #e3eee1;
+  background-color: rgb(227, 238, 225);
   font-family: "Markazi Text", serif;
   margin: 3rem 5%;
 }
@@ -41,11 +41,11 @@ p {
 }
 
 p::first-letter {
-  color: #b53434;
+  color: rgb(181, 52, 52);
   padding: 0 0.3rem;
   margin: 0 0.3rem 0 0;
   border: 2px solid;
-  border-radius: 8px;
+  border-radius: 0.45rem;
   font-family: Helvetica, sans-serif;
 }
 
@@ -54,7 +54,7 @@ ul.navLink a {
   font-weight: bold;
   color: rgb(38, 135, 127);
   text-transform: uppercase;
-  line-height: 1.2em;
+  line-height: 1.2rem;
   text-decoration: none;
 }
 
@@ -91,7 +91,7 @@ nav ul li,
 #navFooter ul li {
   display: inline-block;
   margin: 1.2rem;
-  width: 150px;
+  width: 10rem;
   border-left: 2px solid #26877f;
   border-right: 2px solid #26877f;
 }
@@ -149,11 +149,11 @@ section {
 
 /* heading section (first rubric section) */
 #headingSection {
-  border: 3px solid #b53434;
+  border: 3px solid rgb(181, 52, 52);
   border-radius: 0.45rem;
   padding: 1rem;
   font-weight: 500;
-  box-shadow: 0 0 10px grey;
+  box-shadow: 0 0 10px rgb(128, 128, 128);
 }
 
 #headingSection > article {
@@ -182,15 +182,15 @@ section {
 /* snapshot effect */
 #serviceSection article.snapshotStyle {
   width: 284px;
-  padding: 10px 10px 20px 10px;
-  border: 1px solid #bfbfbf;
+  padding: 0.7rem;
+  border: 1px solid rgb(191, 191, 191);
   border-radius: 0.45rem;
   margin: 1rem auto;
   background-color: white;
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-  box-shadow: 10px 10px 5px #aaaaaa;
+  box-shadow: 10px 10px 5px rgb(170, 170, 170);
   background-color: rgb(237, 239, 238);
 }
 
@@ -217,7 +217,7 @@ section {
 
 footer {
   padding: 2rem 0;
-  border-top: 4px solid #26877f;
+  border-top: 4px solid rgb(38, 135, 127);
   display: flex;
   flex-wrap: wrap-reverse;
   justify-content: space-between;
@@ -241,19 +241,19 @@ footer #rightBlock {
 }
 
 footer #rightBlock #navFooter ul {
-  border-bottom: 2px solid #b53434;
+  border-bottom: 2px solid rgb(181, 52, 52);
 }
 
 footer #rightBlock #navFooter ul li {
   margin: 0 0.5rem 1rem 0.5rem;
-  width: 120px;
+  width: 7rem;
 }
 
 footer #rightBlock #navFooter ul li a {
   font-size: 1rem;
   font-weight: normal;
   font-style: italic;
-  color: #b53434;
+  color: rgb(181, 52, 52);
 }
 
 footer #rightBlock p {
