@@ -1,32 +1,15 @@
+/*--- Reset default browser styles ---*/
 * {
-  margin: 0; /* - Given - */
-  padding: 0; /* - Given - */
+  margin: 0;
+  padding: 0;
 }
+
+/*--- Global styles ---*/
 
 body {
-  /*background-color: #edefee;*/ /* - Given - */
-  background-color: #e3eee1; /* #daede9; #f0fff0; */
-  font-family: "Markazi Text", serif; /* - Given - */
-  margin: 3rem 5%; /* - Given - */
-}
-
-h1,
-h2 {
-  color: #26877f;
-}
-
-h1 {
-  font-size: 3rem; /* - Given - */
-  margin: 1rem 0;
-}
-
-h2 {
-  font-size: 2rem; /* - Given - */
-}
-
-p {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  background-color: #e3eee1;
+  font-family: "Markazi Text", serif;
+  margin: 3rem 5%;
 }
 
 header,
@@ -35,188 +18,96 @@ footer {
   margin: 2rem 0;
 }
 
-header > img {
-  display: block; /* - Given - */
-  max-width: 7rem;
-  margin-left: auto; /* - Given - */
-  margin-right: auto; /* - Given - */
-  /* box-shadow: 20px 20px 50px 10px pink inset; */
+h1,
+h2 {
+  color: #b53434; /* #26877f;*/
 }
 
-nav ul {
-  list-style: none; /* - Given - */
-  text-align: center; /* - Given - */
-
-  border-bottom: 4px solid #26877f;
+h1 {
+  font-size: 3rem;
+  margin: 1rem 0;
+  text-align: center;
+  font-style: italic;
 }
 
-/* -----!!!!!-----------*/
-
-nav ul li {
-  display: inline-block; /* - Given - */
-  margin: 1.2rem 1.2rem;
-  width: 150px;
-  border-left: 2px solid #26877f;
-  border-right: 2px solid #26877f;
+h2 {
+  font-size: 2rem;
 }
 
-nav ul li a {
+p {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  color: rgb(50 94 90);
+}
+
+p::first-letter {
+  color: #b53434;
+  padding: 0 0.3rem;
+  margin: 0 0.3rem 0 0;
+  border: 2px solid;
+  border-radius: 8px;
+  font-family: Helvetica, sans-serif;
+}
+
+ul.navLink a {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  color: rgb(38, 135, 127);
+  text-transform: uppercase;
+  line-height: 1.2em;
+  text-decoration: none;
+}
+
+ul.navLink a {
   font-family: Helvetica, sans-serif;
   font-size: 1.2rem;
   font-weight: bold;
   color: rgb(38, 135, 127);
   text-transform: uppercase;
   line-height: 1.2em;
-  text-decoration: none; /* - Given - */
+  text-decoration: none;
 }
 
-main {
-  margin-top: 3rem;
-  padding: 1.5rem;
-}
+/*--- header section ---*/
 
-.section {
-  display: flex; /* - Given - */
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-#welcome-head {
-  border-radius: 0.45rem;
-  border: 4px solid rgb(38, 135, 127);
-  /* background-color: #b9dabf; */
-  /* background-color: #c1e6c8; */
-  padding: 1.2rem;
-  color: white;
-}
-
-#welcome-head > article > p {
-  text-align: justify;
-}
-
-article {
-}
-
-.snapshot {
-  width: 284px;
-  padding: 10px 10px 20px 10px;
-  border: 1px solid #bfbfbf;
-  background-color: white;
-  box-shadow: 10px 10px 5px #aaaaaa;
-  margin: 1rem auto;
-  border-radius: 0.45rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-  /* background-color: #c1e6c8; */
-}
-
-article img {
-  width: 284px;
-  height: 213px;
-  /* border: 4px solid rgb(38, 135, 127); */
-  /* border-radius: 50%; */
-  /* width: 100%; */
-
-  transition: 0.8s ease-in-out;
-}
-
-/* article img:hover {
-  border-radius: 50%;
-  transform: scale(1.5);
-  margin-bottom: 2rem;
-} */
-
-.snapshot p {
-  font-size: 1.3rem;
-  line-height: 1.3rem;
-  font-style: italic;
-  text-align: center;
-}
-
-.rotate_right {
-  float: left;
-  transform: rotate(8deg);
-}
-
-.rotate_left {
-  float: left;
-  transform: rotate(-8deg);
-  transition: transform 0.2s linear;
-}
-
-.rotate_right:hover,
-.rotate_left:hover {
-  transform: rotate(0deg);
-  transition: transform 0.2s linear;
-}
-
-footer {
-  display: flex; /* - Given - */
-  padding: 2rem 0; /* ------------- */
-  border-top: 4px solid #26877f;
-}
-
-footer div {
-  flex: 1; /* - Given - */
-}
-
-footer > div > img {
+header > img {
   display: block;
-  max-width: 4rem;
+  max-width: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+  /* box-shadow: inset 20px 20px 50px 10px rgb(181, 52, 52, 0.3); */
 }
 
-#copyright p {
-  margin-top: 1rem;
-  font-family: Helvetica, sans-serif;
-  font-size: 1rem;
+/*--- navigation bar of the top ---*/
+
+nav ul,
+#navFooter ul {
+  list-style: none;
   text-align: center;
-  color: rgb(126, 126, 126);
-  text-transform: uppercase;
-}
-
-#copyright {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-}
-
-#copyright ul {
-  max-width: 400px;
-}
-
-/*------------*/
-
-#footerNav ul {
-  list-style: none; /* - Given - */
-  text-align: center; /* - Given - */
-
   border-bottom: 4px solid #26877f;
 }
 
-#footerNav ul li {
-  display: inline-block; /* - Given - */
-  margin: 1rem 1rem;
-  width: 120px;
+nav ul li,
+#navFooter ul li {
+  display: inline-block;
+  margin: 1.2rem;
+  width: 150px;
   border-left: 2px solid #26877f;
   border-right: 2px solid #26877f;
 }
 
-#footerNav ul li a {
-  font-family: Helvetica, sans-serif;
-  font-size: 1rem;
-  font-weight: bold;
-  color: rgb(38, 135, 127);
-  text-transform: uppercase;
-  line-height: 1.2rem;
-  text-decoration: none; /* - Given - */
+nav ul li a,
+#navFooter ul li a {
+  font-size: 1.2rem;
 }
 
-#footerNav ul li {
+/* animation of top and bottom navbar links */
+
+ul.navAnimation li {
   background-image: linear-gradient(
     to right,
     rgba(255, 255, 255, 0) 50%,
-    #cfcece 50%
+    rgb(207, 206, 206) 50%
   );
   background-position: -0% 0;
   background-size: 200% auto;
@@ -224,14 +115,152 @@ footer > div > img {
   transition: background-position 0.2s ease-out;
 }
 
-#footerNav ul li:hover {
+ul.navAnimation li:hover {
   background-position: -99.99% 0;
 }
 
-/*---------------------*/
+/*--- main section ---*/
 
-/* #copyright {
-  background-color: rgb(38, 135, 127);
-} */
+main {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  border-radius: 0.45rem;
+}
 
-/*-----------------------*/
+/* main section animation: parallax effect */
+
+main.parallax {
+  background-image: url("/images/img_22.jpg");
+  box-shadow: inset 0 0 10px grey;
+
+  /* parallax effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*--- sections ---*/
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* heading section (first rubric section) */
+#headingSection {
+  border: 3px solid #b53434;
+  border-radius: 0.45rem;
+  padding: 1rem;
+  font-weight: 500;
+  box-shadow: 0 0 10px grey;
+}
+
+#headingSection > article {
+  border: 3px solid rgb(209, 210, 209);
+  border-radius: 0.45rem;
+  padding: 1.2rem;
+  text-align: justify;
+  background-color: rgba(237, 239, 238, 0.5);
+}
+
+/* service section (second rubric section) */
+
+#serviceSection article img {
+  width: 284px;
+  height: 213px;
+  border: 2px solid rgb(38, 135, 127);
+}
+
+#serviceSection article p {
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  font-style: italic;
+  text-align: center;
+}
+
+/* snapshot effect */
+#serviceSection article.snapshotStyle {
+  width: 284px;
+  padding: 10px 10px 20px 10px;
+  border: 1px solid #bfbfbf;
+  border-radius: 0.45rem;
+  margin: 1rem auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  box-shadow: 10px 10px 5px #aaaaaa;
+  background-color: rgb(237, 239, 238);
+}
+
+/* service article animation : rotate left or right */
+
+#serviceSection article.rotateRight {
+  float: left;
+  transform: rotate(8deg);
+}
+
+#serviceSection article.rotateLeft {
+  float: left;
+  transform: rotate(-8deg);
+  transition: transform 0.2s linear;
+}
+
+#serviceSection article.rotateRight:hover,
+#serviceSection article.rotateLeft:hover {
+  transform: rotate(0deg);
+  transition: transform 0.2s linear;
+}
+
+/*--- footer section ---*/
+
+footer {
+  padding: 2rem 0;
+  border-top: 4px solid #26877f;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+}
+
+footer div {
+  flex: 1;
+}
+
+footer > div > img {
+  display: block;
+  max-width: 4rem;
+  box-shadow: inset 20px 20px 50px 10px rgb(181, 52, 52, 0.2);
+}
+
+footer #rightBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-top: 0.8rem;
+}
+
+footer #rightBlock #navFooter ul {
+  border-bottom: 2px solid #b53434;
+}
+
+footer #rightBlock #navFooter ul li {
+  margin: 0 0.5rem 1rem 0.5rem;
+  width: 120px;
+}
+
+footer #rightBlock #navFooter ul li a {
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: italic;
+  color: #b53434;
+}
+
+footer #rightBlock p {
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(126, 126, 126);
+  margin-top: 1rem;
+}
