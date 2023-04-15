@@ -161,6 +161,7 @@ section {
   border-radius: 0.45rem;
   padding: 1.2rem;
   text-align: justify;
+  font-weight: bold;
   background-color: rgba(237, 239, 238, 0.5);
 }
 
@@ -177,6 +178,12 @@ section {
   line-height: 1.3rem;
   font-style: italic;
   text-align: center;
+}
+
+a.visit {
+  color: rgb(181, 52, 52);
+  text-align: right;
+  margin-right: 0.8rem;
 }
 
 /* snapshot effect */
